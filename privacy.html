@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - JIRA OAuth Agent</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #0052CC;
+            border-bottom: 3px solid #0052CC;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #172B4D;
+            margin-top: 30px;
+        }
+        h3 {
+            color: #42526E;
+            margin-top: 20px;
+        }
+        .last-updated {
+            color: #6B778C;
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .highlight {
+            background-color: #DEEBFF;
+            padding: 15px;
+            border-left: 4px solid #0052CC;
+            margin: 20px 0;
+        }
+        .contact {
+            background-color: #F4F5F7;
+            padding: 20px;
+            border-radius: 4px;
+            margin-top: 30px;
+        }
+        a {
+            color: #0052CC;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy</h1>
+        <p class="last-updated">Last Updated: November 7, 2024</p>
+
+        <div class="highlight">
+            <strong>Important:</strong> This application respects your privacy and implements secure OAuth 2.0 authentication. We do not store your Atlassian password and only access the data necessary to display your JIRA tickets.
+        </div>
+
+        <h2>1. Introduction</h2>
+        <p>This Privacy Policy explains how the JIRA OAuth Agent ("we", "our", or "the Application") collects, uses, and protects your information when you use our service to access your Atlassian JIRA data.</p>
+
+        <h2>2. Information We Collect</h2>
+
+        <h3>2.1 Information from Atlassian</h3>
+        <p>When you authenticate with your Atlassian account, we receive:</p>
+        <ul>
+            <li><strong>Account Information:</strong> Your Atlassian account ID, name, and email address</li>
+            <li><strong>Profile Information:</strong> Your profile picture/avatar URL</li>
+            <li><strong>JIRA Data:</strong> Information about tickets where you are the assignee or reporter, including:
+                <ul>
+                    <li>Ticket keys, summaries, and descriptions</li>
+                    <li>Status, priority, and issue type</li>
+                    <li>Assignee and reporter information</li>
+                    <li>Creation and update timestamps</li>
+                    <li>JIRA workspace/site information</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>2.2 Technical Information</h3>
+        <p>We automatically collect:</p>
+        <ul>
+            <li><strong>Session Data:</strong> Temporary session identifiers for maintaining your login state</li>
+            <li><strong>OAuth Tokens:</strong> Access tokens and refresh tokens (stored securely in server-side sessions)</li>
+            <li><strong>Usage Information:</strong> Basic server logs for debugging and security purposes</li>
+        </ul>
+
+        <h2>3. How We Use Your Information</h2>
+        <p>We use the collected information solely for the following purposes:</p>
+        <ul>
+            <li><strong>Authentication:</strong> To verify your identity and maintain your session</li>
+            <li><strong>Display JIRA Data:</strong> To show you tickets where you are assigned or reporter</li>
+            <li><strong>Service Functionality:</strong> To provide statistics and filtering of your tickets</li>
+            <li><strong>Token Refresh:</strong> To automatically refresh your access token for uninterrupted service</li>
+            <li><strong>Security:</strong> To protect against unauthorized access and maintain service security</li>
+        </ul>
+
+        <h2>4. Data Storage and Security</h2>
+
+        <h3>4.1 How We Store Your Data</h3>
+        <ul>
+            <li><strong>Session Storage:</strong> OAuth tokens are stored in secure, server-side sessions</li>
+            <li><strong>No Password Storage:</strong> We never see or store your Atlassian password</li>
+            <li><strong>Temporary Storage:</strong> Session data is automatically deleted after 24 hours of inactivity or upon logout</li>
+            <li><strong>No Persistent Database:</strong> We do not maintain a permanent database of your JIRA data</li>
+        </ul>
+
+        <h3>4.2 Security Measures</h3>
+        <ul>
+            <li><strong>OAuth 2.0 with PKCE:</strong> Industry-standard authentication with enhanced security</li>
+            <li><strong>HTTPS Encryption:</strong> All data transmitted is encrypted in transit (in production)</li>
+            <li><strong>CSRF Protection:</strong> State parameter validation prevents cross-site request forgery</li>
+            <li><strong>Secure Sessions:</strong> HTTP-only cookies with secure flags</li>
+            <li><strong>Token Security:</strong> Access tokens are never exposed to the frontend</li>
+        </ul>
+
+        <h2>5. Data Sharing and Third Parties</h2>
+
+        <h3>5.1 Third-Party Services</h3>
+        <p>This application interacts with the following third-party service:</p>
+        <ul>
+            <li><strong>Atlassian:</strong> We communicate directly with Atlassian's OAuth and JIRA APIs to authenticate you and retrieve your ticket data. Please review <a href="https://www.atlassian.com/legal/privacy-policy" target="_blank">Atlassian's Privacy Policy</a>.</li>
+        </ul>
+
+        <h3>5.2 No Data Selling</h3>
+        <p><strong>We do not sell, rent, or share your personal information with any third parties for marketing purposes.</strong></p>
+
+        <h2>6. Data Retention</h2>
+        <ul>
+            <li><strong>Session Data:</strong> Deleted after 24 hours of inactivity or immediately upon logout</li>
+            <li><strong>OAuth Tokens:</strong> Revoked and deleted when you log out</li>
+            <li><strong>Server Logs:</strong> Retained for up to 30 days for security and debugging purposes, then automatically deleted</li>
+        </ul>
+
+        <h2>7. Your Rights and Choices</h2>
+
+        <h3>7.1 Access and Control</h3>
+        <p>You have the right to:</p>
+        <ul>
+            <li><strong>Revoke Access:</strong> You can revoke the application's access at any time through your <a href="https://id.atlassian.com/manage-profile/security" target="_blank">Atlassian account settings</a></li>
+            <li><strong>Logout:</strong> Clear all session data by clicking the logout button</li>
+            <li><strong>Data Deletion:</strong> All your data is automatically deleted when you logout or after 24 hours of inactivity</li>
+        </ul>
+
+        <h3>7.2 Atlassian Data Rights</h3>
+        <p>For questions about data stored by Atlassian, please refer to <a href="https://www.atlassian.com/legal/privacy-policy" target="_blank">Atlassian's Privacy Policy</a> and contact Atlassian directly.</p>
+
+        <h2>8. Cookies and Tracking</h2>
+        <p>We use essential cookies for:</p>
+        <ul>
+            <li><strong>Session Management:</strong> Maintaining your authenticated session</li>
+            <li><strong>CSRF Protection:</strong> Preventing cross-site request forgery attacks</li>
+        </ul>
+        <p>We do not use tracking cookies or analytics cookies.</p>
+
+        <h2>9. Children's Privacy</h2>
+        <p>This application is not intended for use by individuals under the age of 13. We do not knowingly collect personal information from children under 13.</p>
+
+        <h2>10. International Data Transfers</h2>
+        <p>Your data may be processed on servers located in different countries. By using this application, you consent to the transfer of your information to countries outside your country of residence, which may have different data protection rules.</p>
+
+        <h2>11. Changes to This Privacy Policy</h2>
+        <p>We may update this Privacy Policy from time to time. We will notify you of any changes by:</p>
+        <ul>
+            <li>Updating the "Last Updated" date at the top of this policy</li>
+            <li>Displaying a notice on the application (for material changes)</li>
+        </ul>
+        <p>Your continued use of the application after changes constitutes acceptance of the updated policy.</p>
+
+        <h2>12. Compliance</h2>
+        <p>This application is designed to comply with:</p>
+        <ul>
+            <li><strong>GDPR:</strong> General Data Protection Regulation (EU)</li>
+            <li><strong>CCPA:</strong> California Consumer Privacy Act</li>
+            <li><strong>OAuth 2.0:</strong> Industry-standard authorization framework (RFC 6749)</li>
+            <li><strong>PKCE:</strong> Proof Key for Code Exchange (RFC 7636)</li>
+        </ul>
+
+        <h2>13. Data Breach Notification</h2>
+        <p>In the unlikely event of a data breach that affects your personal information, we will:</p>
+        <ul>
+            <li>Notify affected users within 72 hours</li>
+            <li>Provide details about the breach and steps taken to address it</li>
+            <li>Offer guidance on protecting your account</li>
+        </ul>
+
+        <h2>14. Open Source</h2>
+        <p>This is an open-source proof-of-concept application. You can review the source code to understand exactly how your data is handled.</p>
+
+        <div class="contact">
+            <h2>15. Contact Information</h2>
+            <p>If you have questions, concerns, or requests regarding this Privacy Policy or your personal data, please contact:</p>
+            <p>
+                <strong>Email:</strong> <a href="mailto:privacy@example.com">privacy@example.com</a><br>
+                <strong>GitHub:</strong> <a href="https://github.com/ej29-r3d/jira_agent" target="_blank">https://github.com/ej29-r3d/jira_agent</a>
+            </p>
+        </div>
+
+        <h2>16. Acknowledgment</h2>
+        <p>By using the JIRA OAuth Agent, you acknowledge that you have read and understood this Privacy Policy and agree to its terms.</p>
+
+        <hr style="margin: 40px 0; border: none; border-top: 1px solid #DFE1E6;">
+
+        <p style="text-align: center; color: #6B778C; font-size: 14px;">
+            <strong>JIRA OAuth Agent</strong> - A proof-of-concept OAuth 2.0 integration<br>
+            Built with security and privacy in mind
+        </p>
+    </div>
+</body>
+</html>
