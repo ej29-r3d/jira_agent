@@ -1,0 +1,24 @@
+{
+  "name": "jira-oauth-poc",
+  "version": "1.0.0",
+  "description": "JIRA OAuth 2.0 (3LO) POC - Secure authentication and ticket display",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "jira",
+    "oauth",
+    "atlassian",
+    "authentication"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.1"
+  }
+}
