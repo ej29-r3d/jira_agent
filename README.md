@@ -38,6 +38,40 @@ This application showcases best practices for implementing OAuth 2.0 authenticat
 - `/auth/status` - Check authentication status
 - `/health` - Health check endpoint
 
+## Service Portal Scraper
+
+The project includes a powerful toolkit for discovering and collecting Atlassian service portal URLs at scale. This is useful for:
+
+- Testing OAuth flows against real public portals
+- Building a database of Atlassian service desk examples
+- Research and analysis of public Atlassian deployments
+- Automated testing and validation
+
+### Features
+
+- **Two scraping methods**: Web scraping (free, no API key) and API-based (fast, reliable)
+- **Multiple API providers**: SerpAPI, Google Custom Search, Bing Search API
+- **Smart deduplication**: Automatically removes duplicate portals
+- **Resume capability**: Continue from where you left off
+- **Multiple output formats**: JSON and CSV export
+- **Portal classification**: Automatically categorizes portal types
+
+### Quick Start
+
+```bash
+# Web scraping (no API key required)
+cd scraper
+node scrape.js web --max 200
+
+# API scraping (recommended - requires free API key)
+node scrape.js api --provider serpapi --key YOUR_KEY --max 500
+
+# Get help
+node scrape.js help
+```
+
+For detailed documentation, see [scraper/README.md](scraper/README.md).
+
 ## Architecture
 
 ### Project Structure
@@ -52,6 +86,12 @@ jira-oauth-poc/
 ├── public/
 │   ├── index.html        # Landing page
 │   └── dashboard.html    # Post-authentication dashboard
+├── scraper/              # Service portal discovery tools
+│   ├── scrape.js         # CLI wrapper for easy usage
+│   ├── portal-scraper.js # Web-based scraper
+│   ├── api-scraper.js    # API-based scraper
+│   ├── README.md         # Scraper documentation
+│   └── .env.example      # API configuration template
 ├── package.json          # Dependencies and scripts
 ├── .env                  # Environment variables (not in git)
 ├── .env.example          # Environment template
