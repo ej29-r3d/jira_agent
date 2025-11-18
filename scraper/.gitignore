@@ -1,0 +1,11 @@
+# Scraper output files
+*.json
+*.csv
+!package.json
+
+# Logs
+*.log
+
+# Temp files
+.DS_Store
+*.tmp
