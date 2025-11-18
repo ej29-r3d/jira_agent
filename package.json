@@ -5,7 +5,12 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "dev": "node server.js"
+    "dev": "node server.js",
+    "scrape": "node scraper/run-scraper.js",
+    "scrape:help": "node scraper/run-scraper.js --help",
+    "scrape:strategies": "node scraper/run-scraper.js --list-strategies",
+    "scrape:comprehensive": "node scraper/run-scraper.js comprehensive",
+    "scrape:quick": "node scraper/run-scraper.js comprehensive --results 100"
   },
   "keywords": [
     "jira",
@@ -19,6 +24,7 @@
     "express": "^4.18.2",
     "express-session": "^1.17.3",
     "axios": "^1.6.0",
-    "dotenv": "^16.3.1"
+    "dotenv": "^16.3.1",
+    "cheerio": "^1.0.0-rc.12"
   }
 }
